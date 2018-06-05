@@ -109,13 +109,57 @@
 	\maketitle
 	\tableofcontents
 \chapter{Project description}
-The goal of the following project
+The goal of the following project is to design and prepare the hardware realization of the circuit able to convert RS--232 data to FSK (FM modulation).\\
+\\
+To achieve this result, the following assumptions were made:
+\begin{itemize}
+	\item data to be transmitted will be send from PC to RS--232 interface,
+	\item the data preparation will be achieved utilizing ARM microcontroller (RS--232 receiving, generating carrier wave, modulating the signal),
+	\item additional analogue circuit will be designed and assembled to perform all necessary signal post--processing (e.g. amplification).
+\end{itemize}
 \chapter{Design and simulation}
+
+The digital part (microcontroller) is responsible for receiving the RS--232 data and performing carrier generation and signal modulation.
+
+%Pan Adam
+It was done by [...]
+
+%Pan Adam
+On the other hand, the analogue circuit deals with [...]
+
+The complete design was prepared in LTSpice, that also allowed to perform a simulations of the circuit.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{design}
+	\caption{LTSpice desing of analogue part.}
+	\label{fig:design}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{output}
+	\caption{Simulated output of the final stage of amplification.}
+	\label{fig:output}
+\end{figure}
+
 \chapter{Physical realization}
+
+%Pan Adam fotki i spis elementów
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{output1}
+	\vspace{20pt}
+	\includegraphics[width=0.7\linewidth]{output2}
+	\caption{Frequency modulation presented at analog circuit output (825 and 980 kHz)}
+	\label{fig:output1}
+	
+\end{figure}
+
 \chapter{Conclusions}
 
+%a to w ogóle potrzebne?
 \begin{thebibliography}{9}
-\bibitem{microwave} Online Microwave Encyclopedia, http://microwave101.com,  (27.02.2018)
+
 \end{thebibliography}
 	
 \end{document}
